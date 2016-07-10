@@ -1,3 +1,97 @@
-p {
-	color:red;
+* {
+	box-sizing: border-box;
 }
+
+body {
+	font-family: sans-serif;
+	background-color: white;
+	color:black;
+	margin:0px;
+}
+
+h1 {
+	text-align: center;
+	font-size:175%;
+	font-weight:bold
+	margin 20px 0px;
+}
+
+.text {
+	padding:10px;
+	clear:right;
+}
+
+.title1,.title2,.title3 {
+	float:right;
+	border: 2px solid black;
+	font-weight:bold;
+	font-size:125%;
+	width:150px;
+	text-align: center;
+}
+
+.title2 {
+	color:white;
+	background-color: red;
+}
+
+.title1 {
+	color:black;
+	background-color: pink;
+}
+
+.title3 {
+	background-color: yellow;
+	color:black;
+}
+
+.section1,.section2,.section3 {
+	background-color: white:
+	border:none;
+}
+
+.box{
+	background-color: lightgray;
+	border:2px solid black;
+	width:100%;
+	clear:right;
+	height:33%;
+}
+
+/***** Desktop Version *****/
+
+@media (min-width: 992px) {
+	.section1,.section2,.section3 {
+		width:33%;
+		float:left; 
+		padding:20px;
+	}
+}
+
+/***** Tablet Version *****/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.section1,.section2 {
+		width:50%;
+		float:left;
+		font-size:120%;
+		padding:20px 20px;
+	}
+	.section3 {
+		width:100%;
+		float:left;
+		font-size:120%;
+		padding: 10px 20px;
+	}
+}
+
+/***** Mobile Version *****/
+
+@media (min-width: 200px) and (max-width: 767px) {
+	.section1,.section2,.section3 {
+		width:100%;
+		padding: 10px 20px;
+
+	}
+}
+
